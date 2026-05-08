@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ali Hussain Alhanabi | Premium Technology Portfolio</title>
+  <meta name="description" content="Premium portfolio of Ali Hussain Alhanabi, IT Manager and Head of Technology based in Khobar, Saudi Arabia." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="Ali Hussain Alhanabi | Technology Portfolio" />
+  <meta property="og:description" content="IT leadership, operations technology, AI dashboards, and digital products." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="profile-data.js"></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ali Alhanabi home">
+      <span class="brand-mark">AA</span>
+      <span class="brand-copy"><strong>Ali Alhanabi</strong><small>Technology Portfolio</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a data-i18n="nav_work" href="#work">Work</a>
+      <a data-i18n="nav_expertise" href="#expertise">Expertise</a>
+      <a data-i18n="nav_impact" href="#impact">Impact</a>
+      <a data-i18n="nav_contact" href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button">عربي</button>
+      <a class="magnetic-btn small" href="#contact"><span data-i18n="lets_talk">Let’s Talk</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span><b data-i18n="eyebrow">Premium Technology Leadership</b></div>
+          <h1><span id="heroName">Ali Hussain Alhanabi</span><em data-i18n="hero_line"> builds reliable technology, intelligent operations, and executive-grade digital products.</em></h1>
+          <p class="hero-sub" id="heroSub">IT Manager | Head of Technology based in Khobar, Saudi Arabia.</p>
+          <div class="hero-actions">
+            <a class="magnetic-btn" href="#work"><span data-i18n="view_work">View Selected Work</span></a>
+            <a class="ghost-btn" href="mailto:Ali.H.Alhenabi@gmail.com"><span data-i18n="email_me">Email Me</span></a>
+          </div>
+        </div>
+
+        <aside class="signature-card reveal delay-1" aria-label="Profile card">
+          <div class="orbital-ring"></div>
+          <div class="profile-orb" id="profileOrb"><img id="profilePhoto" alt="Ali Hussain Alhanabi profile photo"><span>AA</span></div>
+          <div class="card-lines">
+            <span></span><span></span><span></span>
+          </div>
+          <h2 id="cardName">Ali Hussain Alhanabi</h2>
+          <p id="cardTitle">IT Manager | Head of Technology</p>
+          <div class="status-pill"><i></i><span data-i18n="available">Available for strategic opportunities</span></div>
+          <div class="social-strip" id="heroSocial"></div>
+        </aside>
+      </div>
+      <div class="metric-row" id="metrics"></div>
+    </section>
+
+    <section class="section-shell marquee-shell" aria-label="Capabilities">
+      <div class="marquee"><div class="marquee-track">
+        <span>IT Strategy</span><span>Cloud Infrastructure</span><span>Cybersecurity</span><span>Fuel Operations</span><span>AI Dashboards</span><span>Digital Products</span><span>Automation</span><span>Governance</span>
+      </div></div>
+    </section>
+
+    <section class="section-shell split-section" id="expertise">
+      <div class="section-heading reveal">
+        <p data-i18n="expertise_kicker">Expertise</p>
+        <h2 data-i18n="expertise_title">A technology leader who connects business, operations, and execution.</h2>
+      </div>
+      <div class="strength-grid" id="strengths"></div>
+    </section>
+
+    <section class="section-shell" id="work">
+      <div class="section-heading wide reveal">
+        <p data-i18n="work_kicker">Selected Work</p>
+        <h2 data-i18n="work_title">Projects with operational value, premium design, and practical business impact.</h2>
+      </div>
+      <div class="project-grid" id="projects"></div>
+    </section>
+
+    <section class="section-shell impact-section" id="impact">
+      <div class="impact-panel reveal">
+        <div>
+          <p class="section-kicker" data-i18n="impact_kicker">Professional Impact</p>
+          <h2 data-i18n="impact_title">Built for trust: stable systems, clear dashboards, and disciplined technology delivery.</h2>
+        </div>
+        <div class="impact-copy">
+          <p data-i18n="impact_text">My work focuses on turning complex operational needs into reliable technology: systems that teams can use, leaders can trust, and businesses can scale.</p>
+        </div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <p class="section-kicker" data-i18n="contact_kicker">Contact</p>
+          <h2 data-i18n="contact_title">Let’s build something exceptional.</h2>
+          <p id="availability">Open to strategic technology leadership, consulting, and digital transformation opportunities.</p>
+        </div>
+        <div class="contact-actions" id="contactActions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <b id="year"></b> Ali Hussain Alhanabi</span>
+    <a href="#top" data-i18n="back_top">Back to top</a>
+  </footer>
+
+  <button class="admin-dot" id="adminDot" aria-label="Open editor"></button>
+  <dialog class="admin-panel" id="adminPanel">
+    <form method="dialog">
+      <div class="admin-head"><strong>Portfolio Editor</strong><button value="close">×</button></div>
+      <textarea id="dataEditor" spellcheck="false"></textarea>
+      <div class="admin-actions"><button id="applyData" type="button">Apply Preview</button><button id="downloadData" type="button">Download profile-data.js</button></div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
