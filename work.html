@@ -3,9 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Work | Ali Alhanabi</title>
-  <meta name="description" content="Selected work and case studies by Ali Alhanabi, including Fuel Command Center Pro and digital products." />
+  <title>Work by Ali Alhanabi | Fuel Command Center Pro, Dashboards &amp; Digital Systems</title>
+  <meta name="description" content="Selected work by Ali Alhanabi, including Fuel Command Center Pro, operational dashboards, e-commerce concepts, mobile utilities, fuel retail technology, AI forecasting, and digital business systems." />
+  <meta name="keywords" content="Ali Alhanabi, Ali Hussain Alhanabi, Ali Al-Hanabi, علي الحنابي, علي حسين الحنابي, Alhanabi, IT Manager Saudi Arabia, Technology Leader Saudi Arabia, Khobar, Digital Transformation, Operations Technology, Fuel Station Technology, Fuel Retail Operations, AI Dashboards, Business Systems, Technology Portfolio" />
+  <meta name="author" content="Ali Hussain Alhanabi" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#07111f" />
+  <link rel="canonical" href="https://www.alhanabi.com/work.html" />
+  <link rel="alternate" hreflang="en" href="https://www.alhanabi.com/work.html" />
+  <link rel="alternate" hreflang="ar" href="https://www.alhanabi.com/work.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.alhanabi.com/work.html" />
+  <meta property="og:site_name" content="Ali Alhanabi Technology Portfolio" />
+  <meta property="og:title" content="Work by Ali Alhanabi | Fuel Command Center Pro, Dashboards &amp; Digital Systems" />
+  <meta property="og:description" content="Selected work by Ali Alhanabi, including Fuel Command Center Pro, operational dashboards, e-commerce concepts, mobile utilities, fuel retail technology, AI forecasting, and digital business systems." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.alhanabi.com/work.html" />
+  <meta property="og:image" content="https://www.alhanabi.com/assets/profile.jpg" />
+  <meta property="og:image:alt" content="Ali Hussain Alhanabi technology portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_SA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@alihalhanabi" />
+  <meta name="twitter:creator" content="@alihalhanabi" />
+  <meta name="twitter:title" content="Work by Ali Alhanabi | Fuel Command Center Pro, Dashboards &amp; Digital Systems" />
+  <meta name="twitter:description" content="Selected work by Ali Alhanabi, including Fuel Command Center Pro, operational dashboards, e-commerce concepts, mobile utilities, fuel retail technology, AI forecasting, and digital business systems." />
+  <meta name="twitter:image" content="https://www.alhanabi.com/assets/profile.jpg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://www.alhanabi.com/#person","name":"Ali Hussain Alhanabi","alternateName":["Ali Alhanabi","Ali Al-Hanabi","علي حسين الحنابي","علي الحنابي"],"jobTitle":["IT Manager","Head of Technology","Technology Leader"],"url":"https://www.alhanabi.com/","email":"ali@alhanabi.com","image":"https://www.alhanabi.com/assets/profile.jpg","address":{"@type":"PostalAddress","addressLocality":"Khobar","addressCountry":"SA"},"sameAs":["https://www.linkedin.com/in/ali-al-hanabi-09a138151/","https://x.com/alihalhanabi"],"knowsAbout":["IT leadership","operations technology","digital transformation","fuel station technology","fuel retail operations","AI dashboards","business systems","cybersecurity","infrastructure","automation","product thinking"]},{"@type":"WebSite","@id":"https://www.alhanabi.com/#website","url":"https://www.alhanabi.com/","name":"Ali Alhanabi Technology Portfolio","publisher":{"@id":"https://www.alhanabi.com/#person"},"inLanguage":["en","ar"]},{"@type":"WebPage","@id":"https://www.alhanabi.com/work.html#webpage","url":"https://www.alhanabi.com/work.html","name":"Work by Ali Alhanabi | Fuel Command Center Pro, Dashboards & Digital Systems","description":"Selected work by Ali Alhanabi, including Fuel Command Center Pro, operational dashboards, e-commerce concepts, mobile utilities, fuel retail technology, AI forecasting, and digital business systems.","isPartOf":{"@id":"https://www.alhanabi.com/#website"},"about":{"@id":"https://www.alhanabi.com/#person"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.alhanabi.com/assets/profile.jpg"},"inLanguage":["en","ar"]}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -20,6 +43,7 @@
       <span class="brand-mark">AA</span>
       <span class="brand-copy"><strong>Ali Alhanabi</strong><small>Technology Portfolio</small></span>
     </a>
+    <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Primary navigation">
       <a data-i18n="nav_home" href="index.html">Home</a>
       <a data-i18n="nav_about" href="about.html">About</a>
@@ -49,5 +73,22 @@
     <a href="#top" data-i18n="back_top">Back to top</a>
   </footer>
   <script src="site-pages.js"></script>
+  <script>
+    // Mobile navigation controller
+    (() => {
+      const btn = document.getElementById('mobileNavToggle');
+      const nav = document.querySelector('.site-header .nav');
+      if (!btn || !nav) return;
+      const close = () => { nav.classList.remove('nav-open'); btn.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); };
+      btn.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav-open');
+        btn.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+      window.addEventListener('resize', () => { if (window.innerWidth > 920) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    })();
+  </script>
 </body>
 </html>

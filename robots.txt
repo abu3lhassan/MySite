@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /abu3lhassanAdminZ/
+Sitemap: https://www.alhanabi.com/sitemap.xml

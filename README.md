@@ -38,3 +38,7 @@ Add your photo as `assets/profile.jpg`. Use a square image, recommended 1000x100
 ## Multi-page version
 
 This version includes supporting pages: `about.html`, `work.html`, `philosophy.html`, and `contact.html`, all using the same visual identity and language toggle.
+
+
+## SEO v7
+Includes robots.txt, sitemap.xml, canonical URLs, Open Graph/Twitter metadata, and JSON-LD structured data for search engines.
