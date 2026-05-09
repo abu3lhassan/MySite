@@ -54,13 +54,14 @@ function renderTimeline(){
   document.getElementById("timeline").innerHTML = runtimeProfile.timeline.map(item => `<article class="timeline-item reveal"><strong>${item.year}</strong><h3>${text(item.title,item.titleAr)}</h3><p>${text(item.text,item.textAr)}</p></article>`).join("");
 }
 function renderContacts(){
+  const phoneDisplay = "+966 57 853 5751";
   const contact = [
     ["email", runtimeProfile.email, runtimeProfile.social.email],
     ["linkedin", "ali-al-hanabi", runtimeProfile.social.linkedin],
-    ["x", "@abu3lzahra", runtimeProfile.social.x],
-    ["whatsapp", runtimeProfile.phone, runtimeProfile.social.whatsapp]
+    ["x", "@alihalhanabi", runtimeProfile.social.x],
+    ["whatsapp", phoneDisplay, runtimeProfile.social.whatsapp]
   ];
-  document.getElementById("contactActions").innerHTML = contact.map(([key,value,href]) => `<a class="contact-link" href="${href}" target="_blank" rel="noopener" aria-label="${key}"><span class="contact-icon">${icons[key]}</span><b>${value}</b><span class="contact-arrow">↗</span></a>`).join("");
+  document.getElementById("contactActions").innerHTML = contact.map(([key,value,href]) => `<a class="contact-link" href="${href}" target="_blank" rel="noopener" aria-label="${key}"><span class="contact-icon">${icons[key]}</span><b class="contact-value" dir="ltr">${value}</b><span class="contact-arrow">↗</span></a>`).join("");
 }
 
 function initReveal(){

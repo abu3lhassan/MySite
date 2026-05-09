@@ -5,7 +5,7 @@ const PROFILE = {
   titleAr: "مدير تقنية المعلومات | رئيس التقنية",
   location: "Khobar, Saudi Arabia",
   locationAr: "الخبر، المملكة العربية السعودية",
-  email: "Ali.H.Alhenabi@gmail.com",
+  email: "ali@alhanabi.com",
   phone: "+966578535751",
   domain: "www.alhanabi.com",
   profilePhoto: "assets/profile.jpg",
@@ -13,9 +13,9 @@ const PROFILE = {
   availabilityAr: "متاح لفرص القيادة التقنية، الاستشارات، والتحول الرقمي.",
   social: {
     linkedin: "https://www.linkedin.com/in/ali-al-hanabi-09a138151/",
-    x: "https://x.com/abu3lzahra",
+    x: "https://x.com/alihalhanabi",
     whatsapp: "https://wa.me/966578535751",
-    email: "mailto:Ali.H.Alhenabi@gmail.com"
+    email: "mailto:ali@alhanabi.com"
   },
   metrics: [
     { value: "IT", label: "Leadership", labelAr: "قيادة تقنية" },
