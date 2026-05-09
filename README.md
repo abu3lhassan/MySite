@@ -42,3 +42,12 @@ This version includes supporting pages: `about.html`, `work.html`, `philosophy.h
 
 ## SEO v7
 Includes robots.txt, sitemap.xml, canonical URLs, Open Graph/Twitter metadata, and JSON-LD structured data for search engines.
+
+
+## v9: Resume and Notes
+Added `resume.html` and `notes.html`, updated SEO sitemap, and kept the mobile menu active across all pages.
+
+
+## Favicon assets
+
+The site includes premium browser tab icons in `/favicon.ico` and `/assets/favicon.svg`, plus Apple and Android icon sizes.
