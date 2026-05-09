@@ -33,3 +33,8 @@ This lets you preview edits locally in the browser and download a new `profile-d
 
 ## Profile photo
 Add your photo as `assets/profile.jpg`. Use a square image, recommended 1000x1000 px or 1200x1200 px, JPG/WebP, ideally under 500 KB. Keep your face centered with safe space around the edges because the design crops it as a circle.
+
+
+## Multi-page version
+
+This version includes supporting pages: `about.html`, `work.html`, `philosophy.html`, and `contact.html`, all using the same visual identity and language toggle.
