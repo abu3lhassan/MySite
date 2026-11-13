@@ -1,0 +1,42 @@
+# Restrictive asset-publication policy (allowlist).
+# Wrangler uploads every file in the assets directory ("./") unless it is
+# ignored here. Everything is excluded by default; only files intended for
+# public access are re-included below. Add new public files explicitly.
+
+# 1. Exclude everything at the root (files, dotfiles, and directories such as
+#    .git/, .wrangler/, node_modules/).
+/*
+
+# 2. Public pages
+!/index.html
+!/about.html
+!/work.html
+!/philosophy.html
+!/resume.html
+!/notes.html
+!/contact.html
+!/404.html
+
+# 3. Public scripts and styles
+!/styles.css
+!/script.js
+!/site-pages.js
+!/profile-data.js
+
+# 4. Public site metadata
+!/favicon.ico
+!/site.webmanifest
+!/robots.txt
+!/sitemap.xml
+
+# 5. Public assets: only the files listed here are published.
+!/assets/
+/assets/*
+!/assets/profile.jpg
+!/assets/favicon.svg
+!/assets/favicon-16x16.png
+!/assets/favicon-32x32.png
+!/assets/apple-touch-icon.png
+!/assets/android-chrome-192x192.png
+!/assets/android-chrome-512x512.png
+!/assets/Ali_Al-Hanabi_CV_2026.pdf
