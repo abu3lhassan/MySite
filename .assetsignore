@@ -40,3 +40,12 @@
 !/assets/android-chrome-192x192.png
 !/assets/android-chrome-512x512.png
 !/assets/Ali_Al-Hanabi_CV_2026.pdf
+
+# Signature Executive identity assets (local integration).
+!/assets/signature-executive-monogram.svg
+!/assets/signature-executive-wordmark.svg
+
+# ShareAdd screenshots (cropped from authentic app screens, re-encoded without metadata).
+!/assets/shareadd-overview.webp
+!/assets/shareadd-add-address-form.webp
+!/assets/shareadd-navigation.webp

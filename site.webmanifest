@@ -1,14 +1,14 @@
 {
-  "name": "Ali Al-Hanabi Portfolio",
+  "name": "Ali Al-Hanabi | IT Leadership",
   "short_name": "Al-Hanabi",
   "icons": [
     {
-      "src": "/assets/android-chrome-192x192.png",
+      "src": "/assets/android-chrome-192x192.png?v=signature-b",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/android-chrome-512x512.png",
+      "src": "/assets/android-chrome-512x512.png?v=signature-b",
       "sizes": "512x512",
       "type": "image/png"
     }
