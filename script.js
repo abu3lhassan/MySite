@@ -6,8 +6,124 @@ let currentLang = getSavedLanguage();
 const runtimeProfile = PROFILE;
 
 const i18n = {
-  en: { nav_home:"Home", nav_about:"About", nav_work:"Work", nav_philosophy:"Philosophy", nav_resume:"Resume", nav_notes:"Notes", nav_expertise:"Expertise", nav_impact:"Impact", nav_philosophy:"Philosophy", nav_contact:"Contact", lets_talk:"Let’s Talk", eyebrow:"Enterprise Technology Leadership", hero_line:" leads enterprise technology, governance, and digital transformation.", view_work:"View Selected Work", email_me:"Email Me", available:"Professional inquiries & collaboration", expertise_kicker:"Expertise", expertise_title:"Leading the full technology function, from strategy to daily operations.", work_kicker:"Selected Work", work_title:"Leadership initiatives in transformation, governance, and technology delivery.", impact_kicker:"Professional Impact", impact_title:"Built for trust: reliable operations, sound governance, and disciplined delivery.", impact_text:"I lead technology as a business function: aligning investment with organizational priorities, keeping operations secure and dependable, holding vendors and projects accountable, and giving leadership a clear view of where technology stands.", contact_kicker:"Contact", contact_title:"Professional inquiries & collaboration.", back_top:"Back to top" },
-  ar: { nav_home:"الرئيسية", nav_about:"عنّي", nav_work:"الأعمال", nav_philosophy:"الفلسفة", nav_resume:"السيرة", nav_notes:"الأفكار", nav_expertise:"الخبرات", nav_impact:"الأثر", nav_philosophy:"الفلسفة", nav_contact:"التواصل", lets_talk:"تواصل معي", eyebrow:"قيادة تقنية مؤسسية", hero_line:" يقود التقنية المؤسسية والحوكمة والتحول الرقمي.", view_work:"استعرض الأعمال", email_me:"راسلني", available:"للاستفسارات المهنية والتعاون", expertise_kicker:"الخبرات", expertise_title:"قيادة وظيفة التقنية بالكامل، من الاستراتيجية إلى التشغيل اليومي.", work_kicker:"أعمال مختارة", work_title:"مبادرات قيادية في التحول الرقمي والحوكمة وتسليم التقنية.", impact_kicker:"الأثر المهني", impact_title:"مبني على الثقة: تشغيل موثوق، حوكمة سليمة، وتسليم منضبط.", impact_text:"أقود التقنية كوظيفة أعمال: أوائم الاستثمار التقني مع أولويات المؤسسة، وأحافظ على تشغيل آمن وموثوق، وأضمن مساءلة الموردين والمشاريع، وأمنح الإدارة رؤية واضحة لوضع التقنية.", contact_kicker:"التواصل", contact_title:"الاستفسارات المهنية والتعاون.", back_top:"العودة للأعلى" }
+  "en": {
+    "hero_line_2": "Connecting strategy with execution.",
+    "hero_statement": "IT leadership grounded in hands-on technical experience, enterprise operations, and cross-functional delivery.",
+    "expertise_lead": "A management role built on years of hands-on engineering, from support desks and networks to enterprise systems and governance.",
+    "career_kicker": "Career path",
+    "proof_label": "Professional summary",
+    "profile_location_label": "Location",
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_work": "Work",
+    "nav_philosophy": "Philosophy",
+    "nav_resume": "Resume",
+    "nav_notes": "Notes",
+    "nav_expertise": "Expertise",
+    "nav_impact": "Impact",
+    "nav_contact": "Contact",
+    "lets_talk": "Let’s Talk",
+    "eyebrow": "Enterprise Technology Leadership",
+    "hero_line": "Leading technology.",
+    "view_work": "View Selected Work",
+    "email_me": "Email Me",
+    "available": "Professional inquiries & collaboration",
+    "expertise_kicker": "Leadership pillars",
+    "expertise_title": "Five areas where I carry responsibility.",
+    "work_kicker": "Professional initiatives",
+    "work_title": "Leadership in delivery, systems, and governance.",
+    "impact_kicker": "Leadership approach",
+    "impact_title": "Understand the requirement. Set priorities. Follow through.",
+    "impact_text": "I connect business requirements with technology decisions, set priorities for technical work, and coordinate departments and vendors through implementation. My operational background keeps service reliability, user adoption, clear responsibilities, and ongoing support in view.",
+    "contact_kicker": "Contact",
+    "contact_title": "Professional inquiries & collaboration.",
+    "back_top": "Back to top",
+    "brand_descriptor": "IT Leadership",
+    "github_link": "GitHub · Technical projects",
+    "github_contact": "GitHub · Selected technical projects",
+    "shareadd_source": "View ShareAdd on GitHub",
+    "view_resume": "View Resume",
+    "more_work": "Read the full initiatives",
+    "about_resume": "View career history and English CV",
+    "home_label": "Ali Al-Hanabi home",
+    "nav_label": "Primary navigation",
+    "profile_label": "Professional profile",
+    "capabilities_label": "Technology capabilities",
+    "footer_name": "Ali Hussain Al-Hanabi",
+    "social_linkedin": "LinkedIn profile",
+    "social_x": "X profile",
+    "social_whatsapp": "Contact on WhatsApp",
+    "social_email": "Email Ali Al-Hanabi",
+    "profile_photo": "Ali Al-Hanabi profile photo",
+    "hero_context": "IT career since 2017. IT leadership and management since 2021.",
+    "cap_strategy": "IT Strategy",
+    "cap_infrastructure": "Enterprise Infrastructure",
+    "cap_cloud": "Cloud",
+    "cap_security": "Cybersecurity",
+    "cap_governance": "IT Governance",
+    "cap_transformation": "Digital Transformation",
+    "cap_erp": "ERP & Business Systems",
+    "cap_service": "Service Management"
+  },
+  "ar": {
+    "hero_line_2": "وربط الاستراتيجية بالتنفيذ.",
+    "hero_statement": "قيادة لتقنية المعلومات ترتكز على خبرة تقنية عملية، وتشغيل مؤسسي، وتنفيذ مشترك بين الإدارات.",
+    "expertise_lead": "دور إداري بُني على سنوات من العمل التقني المباشر، من الدعم الفني والشبكات إلى الأنظمة المؤسسية والحوكمة.",
+    "career_kicker": "المسار المهني",
+    "proof_label": "ملخص مهني",
+    "profile_location_label": "الموقع",
+    "nav_home": "الرئيسية",
+    "nav_about": "عنّي",
+    "nav_work": "الأعمال",
+    "nav_philosophy": "الفلسفة",
+    "nav_resume": "السيرة",
+    "nav_notes": "الأفكار",
+    "nav_expertise": "الخبرات",
+    "nav_impact": "الأثر",
+    "nav_contact": "التواصل",
+    "lets_talk": "تواصل معي",
+    "eyebrow": "قيادة تقنية مؤسسية",
+    "hero_line": "قيادة التقنية،",
+    "view_work": "استعرض الأعمال",
+    "email_me": "راسلني",
+    "available": "للاستفسارات المهنية والتعاون",
+    "expertise_kicker": "محاور القيادة",
+    "expertise_title": "خمسة مجالات أتحمل فيها المسؤولية.",
+    "work_kicker": "مبادرات مهنية",
+    "work_title": "قيادة في التنفيذ والأنظمة والحوكمة.",
+    "impact_kicker": "المنهج القيادي",
+    "impact_title": "فهم المتطلب، وترتيب الأولويات، ومتابعة التنفيذ.",
+    "impact_text": "أربط متطلبات الأعمال بالقرارات التقنية، وأرتب أولويات العمل التقني، وأنسق بين الإدارات والموردين خلال التنفيذ. ويساعدني أساس عملي في التشغيل على مراعاة اعتمادية الخدمات وتبني المستخدمين ووضوح المسؤوليات والدعم المستمر.",
+    "contact_kicker": "التواصل",
+    "contact_title": "الاستفسارات المهنية والتعاون.",
+    "back_top": "العودة للأعلى",
+    "brand_descriptor": "قيادة تقنية المعلومات",
+    "github_link": "GitHub · مشاريع تقنية",
+    "github_contact": "GitHub · مشاريع تقنية مختارة",
+    "shareadd_source": "استعرض ShareAdd على GitHub",
+    "view_resume": "استعرض السيرة",
+    "more_work": "اقرأ تفاصيل المبادرات",
+    "about_resume": "استعرض المسار المهني والسيرة بالإنجليزية",
+    "home_label": "الرئيسية | علي الحنابي",
+    "nav_label": "التنقل الرئيسي",
+    "profile_label": "الملف المهني",
+    "capabilities_label": "القدرات التقنية",
+    "footer_name": "علي حسين الحنابي",
+    "social_linkedin": "الملف المهني على LinkedIn",
+    "social_x": "الملف على X",
+    "social_whatsapp": "التواصل عبر WhatsApp",
+    "social_email": "مراسلة علي الحنابي بالبريد الإلكتروني",
+    "profile_photo": "الصورة الشخصية لعلي الحنابي",
+    "hero_context": "مسيرة تقنية منذ 2017، وقيادة وإدارة تقنية المعلومات منذ 2021.",
+    "cap_strategy": "استراتيجية التقنية",
+    "cap_infrastructure": "البنية التحتية المؤسسية",
+    "cap_cloud": "السحابة",
+    "cap_security": "الأمن السيبراني",
+    "cap_governance": "حوكمة تقنية المعلومات",
+    "cap_transformation": "التحول الرقمي",
+    "cap_erp": "ERP وأنظمة الأعمال",
+    "cap_service": "إدارة الخدمات"
+  }
 };
 
 const icons = {
@@ -26,13 +142,18 @@ function render(){
   document.body.classList.toggle("rtl", currentLang === "ar");
   document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
   document.getElementById("langToggle").textContent = currentLang === "ar" ? "English" : "عربي";
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el => el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel)));
+  const menu = document.getElementById('mobileNavToggle');
+  if (menu) { const open = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-label', document.documentElement.lang === 'ar' ? (open ? 'إغلاق قائمة التنقل' : 'فتح قائمة التنقل') : (open ? 'Close navigation' : 'Open navigation')); }
   document.getElementById("heroName").textContent = text(runtimeProfile.name, runtimeProfile.nameAr);
-  document.getElementById("heroSub").textContent = `${text(runtimeProfile.title, runtimeProfile.titleAr)} · ${text(runtimeProfile.location, runtimeProfile.locationAr)}`;
+  document.getElementById("heroLocation").textContent = text(runtimeProfile.location, runtimeProfile.locationAr);
   document.getElementById("cardName").textContent = text(runtimeProfile.name, runtimeProfile.nameAr);
   document.getElementById("cardTitle").textContent = text(runtimeProfile.title, runtimeProfile.titleAr);
+  document.documentElement.classList.add("js-ready");
   const photo = document.getElementById("profilePhoto");
   const orb = document.getElementById("profileOrb");
   if (runtimeProfile.profilePhoto) {
+    photo.alt = t("profile_photo");
     photo.src = runtimeProfile.profilePhoto;
     photo.onload = () => orb.classList.add("has-photo");
     photo.onerror = () => orb.classList.remove("has-photo");
@@ -42,20 +163,20 @@ function render(){
 }
 
 function renderSocial(){
-  const html = ["linkedin","x","whatsapp","email"].map(k => `<a class="icon-btn" href="${safeHref(runtimeProfile.social[k])}" target="_blank" rel="noopener" aria-label="${k}">${icons[k]}</a>`).join("");
+  const html = ["linkedin","x","whatsapp","email"].map(k => `<a class="icon-btn" href="${safeHref(runtimeProfile.social[k])}" target="_blank" rel="noopener" aria-label="${esc(t("social_" + k))}">${icons[k]}</a>`).join("");
   document.getElementById("heroSocial").innerHTML = html;
 }
 function renderMetrics(){
-  document.getElementById("metrics").innerHTML = runtimeProfile.metrics.map(m => `<div class="metric-card reveal"><strong>${esc(m.value)}</strong><span>${esc(text(m.label,m.labelAr))}</span></div>`).join("");
+  document.getElementById("metrics").innerHTML = runtimeProfile.metrics.map(m => `<div class="metric-card"><dt>${esc(text(m.value,m.valueAr))}</dt><dd>${esc(text(m.label,m.labelAr))}</dd></div>`).join("");
 }
 function renderStrengths(){
-  document.getElementById("strengths").innerHTML = runtimeProfile.strengths.map((s,i) => `<article class="strength-card reveal"><div class="num">0${i+1}</div><h3>${esc(text(s.title,s.titleAr))}</h3><p>${esc(text(s.text,s.textAr))}</p></article>`).join("");
+  document.getElementById("strengths").innerHTML = runtimeProfile.strengths.map((s,i) => `<li class="pillar reveal"><span class="pillar-num" aria-hidden="true">0${i+1}</span><h3>${esc(text(s.title,s.titleAr))}</h3><p>${esc(text(s.text,s.textAr))}</p></li>`).join("");
 }
 function renderProjects(){
-  document.getElementById("projects").innerHTML = runtimeProfile.projects.map(p => `<article class="project-card reveal ${p.featured ? "featured" : ""}"><span class="tag">${esc(text(p.tag,p.tagAr))}</span><h3>${esc(p.name)}</h3><p>${esc(text(p.summary,p.summaryAr))}</p><p class="impact-text">${esc(text(p.impact,p.impactAr))}</p><div class="stack">${p.stack.map(x=>`<span>${esc(x)}</span>`).join("")}</div></article>`).join("");
+  document.getElementById("projects").innerHTML = runtimeProfile.projects.filter(p => p.homeFeatured).map(p => `<article class="project-card reveal"><div class="initiative-meta"><span class="tag">${esc(text(p.tag,p.tagAr))}</span>${p.status ? `<span class="status-chip">${esc(text(p.status,p.statusAr))}</span>` : ""}</div><h3>${esc(text(p.name,p.nameAr))}</h3><p>${esc(text(p.summary,p.summaryAr))}</p><p class="impact-text">${esc(text(p.impact,p.impactAr))}</p><div class="stack">${(currentLang === "ar" ? (p.stackAr || p.stack) : p.stack).map(x=>`<span>${esc(x)}</span>`).join("")}</div></article>`).join("");
 }
 function renderTimeline(){
-  document.getElementById("timeline").innerHTML = runtimeProfile.timeline.map(item => `<article class="timeline-item reveal"><strong>${esc(item.year)}</strong><h3>${esc(text(item.title,item.titleAr))}</h3><p>${esc(text(item.text,item.textAr))}</p></article>`).join("");
+  document.getElementById("timeline").innerHTML = runtimeProfile.timeline.map(item => `<article class="timeline-item reveal"><strong>${esc(text(item.year,item.yearAr))}</strong><h3>${esc(text(item.title,item.titleAr))}</h3><p>${esc(text(item.text,item.textAr))}</p></article>`).join("");
 }
 function renderContacts(){
   const phoneDisplay = "+966 57 853 5751";
@@ -65,7 +186,7 @@ function renderContacts(){
     ["x", "@alihalhanabi", runtimeProfile.social.x],
     ["whatsapp", phoneDisplay, runtimeProfile.social.whatsapp]
   ];
-  document.getElementById("contactActions").innerHTML = contact.map(([key,value,href]) => `<a class="contact-link" href="${safeHref(href)}" target="_blank" rel="noopener" aria-label="${key}"><span class="contact-icon">${icons[key]}</span><b class="contact-value" dir="ltr">${esc(value)}</b><span class="contact-arrow">↗</span></a>`).join("");
+  document.getElementById("contactActions").innerHTML = contact.map(([key,value,href]) => `<a class="contact-link" href="${safeHref(href)}" target="_blank" rel="noopener" aria-label="${esc(t("social_" + key))}"><span class="contact-icon">${icons[key]}</span><b class="contact-value" dir="ltr">${esc(value)}</b><span class="contact-arrow">↗</span></a>`).join("");
 }
 
 function initReveal(){

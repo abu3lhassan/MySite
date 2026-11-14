@@ -53,13 +53,15 @@
       background: rgba(255,255,255,0.1);
     }
   </style>
+  <link rel="icon" href="/favicon.ico?v=signature-b" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=signature-b">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png?v=signature-b">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png?v=signature-b">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=signature-b">
 </head>
 <body>
   <nav class="nav-shell">
-    <a class="nav-logo" href="/index.html">
-      <span class="logo-mark">AA</span>
-      <span class="logo-name">Ali Al-Hanabi</span>
-    </a>
+    <a class="nav-logo brand signature-brand" href="/index.html" aria-label="Ali Al-Hanabi home"><img class="signature-monogram" src="/assets/signature-executive-monogram.svg" width="40" height="40" alt="" aria-hidden="true"><img class="signature-wordmark" src="/assets/signature-executive-wordmark.svg" width="148" height="23" alt="Ali Al-Hanabi"></a>
   </nav>
   <main class="error-shell">
     <div class="error-code">404</div>
@@ -67,5 +69,18 @@
     <p class="error-body">The page you're looking for doesn't exist or has been moved.</p>
     <a class="error-link" href="/index.html">← Back to home</a>
   </main>
+  <script>
+    (() => {
+      let ar = false;
+      try { ar = localStorage.getItem('portfolio_lang') === 'ar'; } catch {}
+      if (!ar) return;
+      document.documentElement.lang = 'ar';
+      document.documentElement.dir = 'rtl';
+      document.title = 'الصفحة غير موجودة — علي الحنابي';
+      document.querySelector('.error-title').textContent = 'الصفحة غير موجودة';
+      document.querySelector('.error-body').textContent = 'الصفحة المطلوبة غير موجودة أو تم نقلها.';
+      document.querySelector('.error-link').textContent = 'العودة إلى الرئيسية ←';
+    })();
+  </script>
 </body>
 </html>
