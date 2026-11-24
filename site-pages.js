@@ -151,6 +151,7 @@ const pageI18n = {
     "resume_exp_5_h": "Information Technology Support Specialist · AlQahtani Holding",
     "resume_exp_5_p": "Provided end-user technology support, desktop and software configuration, connectivity troubleshooting, and routine IT service assistance.",
     "cv_download": "Download English CV — PDF",
+    "cv_download_ar": "Download Arabic CV — PDF",
     "cv_updated": "Updated November 2026",
     "resume_cert_h": "Certifications & development",
     "resume_edu_h": "Education",
@@ -174,6 +175,15 @@ const pageI18n = {
     "note_3_p1": "AI becomes useful when it is attached to a clear business question. What should we forecast? What risk should we detect? What decision should become easier?",
     "note_3_p2": "In operations, AI should not replace judgment. It should improve visibility, reveal patterns, reduce manual analysis, and help leaders ask better questions earlier.",
     "note_3_p3": "The goal is not to appear advanced. The goal is to build tools that are understandable, governed, and useful in the pressure of real work.",
+    "notes_read": "Read the note",
+    "notes_back": "All notes",
+    "notes_prev": "Previous note",
+    "notes_next": "Next note",
+    "notes_more_label": "More notes",
+    "note_1_doc_title": "From Fragmented Operations to Clear Systems | Ali Al-Hanabi",
+    "note_2_doc_title": "What Fuel Retail Needs from Technology | Ali Al-Hanabi",
+    "note_3_doc_title": "Practical AI Is Decision Support, Not Magic | Ali Al-Hanabi",
+    "notes_doc_title": "Notes | Ali Al-Hanabi on Technology Leadership & Operations",
     "brand_descriptor": "IT Leadership",
     "github_link": "GitHub · Technical projects",
     "github_contact": "GitHub · Selected technical projects",
@@ -373,6 +383,7 @@ const pageI18n = {
     "resume_exp_5_h": "أخصائي دعم تقنية المعلومات · القحطاني القابضة",
     "resume_exp_5_p": "تقديم الدعم التقني للمستخدمين، وإعداد الأجهزة والبرامج، ومعالجة مشكلات الاتصال، والمساعدة في خدمات تقنية المعلومات اليومية.",
     "cv_download": "تحميل السيرة بالإنجليزية — PDF",
+    "cv_download_ar": "تحميل السيرة بالعربية — PDF",
     "cv_updated": "آخر تحديث: نوفمبر 2026",
     "resume_cert_h": "الشهادات والتطوير المهني",
     "resume_edu_h": "التعليم",
@@ -396,6 +407,15 @@ const pageI18n = {
     "note_3_p1": "يصبح الذكاء الاصطناعي مفيداً عندما يرتبط بسؤال أعمال واضح: ماذا نريد أن نتوقع؟ أي خطر نحتاج أن نكتشف؟ أي قرار يجب أن يصبح أسهل؟",
     "note_3_p2": "في التشغيل، لا يجب أن يستبدل الذكاء الاصطناعي الحكم البشري، بل يحسن الرؤية، ويكشف الأنماط، ويقلل التحليل اليدوي، ويساعد القادة على طرح أسئلة أفضل مبكراً.",
     "note_3_p3": "الهدف ليس أن نبدو متقدمين. الهدف أن نبني أدوات مفهومة ومحكومة ومفيدة تحت ضغط العمل الحقيقي.",
+    "notes_read": "اقرأ الملاحظة",
+    "notes_back": "كل الملاحظات",
+    "notes_prev": "الملاحظة السابقة",
+    "notes_next": "الملاحظة التالية",
+    "notes_more_label": "ملاحظات أخرى",
+    "note_1_doc_title": "من التشرذم التشغيلي إلى الأنظمة الواضحة | علي الحنابي",
+    "note_2_doc_title": "ماذا يحتاج قطاع الوقود من التقنية؟ | علي الحنابي",
+    "note_3_doc_title": "الذكاء الاصطناعي العملي دعم قرار وليس سحراً | علي الحنابي",
+    "notes_doc_title": "الأفكار | علي الحنابي عن القيادة التقنية والتشغيل",
     "brand_descriptor": "قيادة تقنية المعلومات",
     "github_link": "GitHub · مشاريع تقنية",
     "github_contact": "GitHub · مشاريع تقنية مختارة",
@@ -456,6 +476,7 @@ function applyPageLang(){
   const btn = document.getElementById('langToggle'); if(btn) btn.textContent = pageLang === 'ar' ? 'English' : 'عربي';
   document.querySelectorAll('[data-i18n-aria-label]').forEach(el => el.setAttribute('aria-label', pt(el.dataset.i18nAriaLabel)));
   document.querySelectorAll('[data-i18n-alt]').forEach(el => el.setAttribute('alt', pt(el.dataset.i18nAlt)));
+  const titleEl = document.querySelector('title[data-i18n-title]'); if (titleEl) document.title = pt(titleEl.dataset.i18nTitle);
   const menu = document.getElementById('mobileNavToggle');
   if (menu) { const open = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-label', document.documentElement.lang === 'ar' ? (open ? 'إغلاق قائمة التنقل' : 'فتح قائمة التنقل') : (open ? 'Close navigation' : 'Open navigation')); }
 }
@@ -463,6 +484,7 @@ function initPageReveal(){
   if (!("IntersectionObserver" in window)) { document.querySelectorAll(".reveal").forEach(el => el.classList.add("show")); return; }
   const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); }), {threshold:.12});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  document.documentElement.classList.add('reveal-ready');
 }
 window.addEventListener('mousemove', e => { const glow = document.getElementById('cursorGlow'); if(glow){ glow.style.left=e.clientX+'px'; glow.style.top=e.clientY+'px'; }});
 document.addEventListener('click', event => {

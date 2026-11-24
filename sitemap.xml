@@ -37,6 +37,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.alhanabi.com/notes-clear-systems.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.alhanabi.com/notes-fuel-retail-technology.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.alhanabi.com/notes-practical-ai.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.alhanabi.com/contact.html</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>

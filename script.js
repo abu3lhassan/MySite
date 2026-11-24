@@ -193,6 +193,7 @@ function initReveal(){
   if (!("IntersectionObserver" in window)) { document.querySelectorAll(".reveal").forEach(el => el.classList.add("show")); return; }
   const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("show"); }), {threshold:.12});
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  document.documentElement.classList.add('reveal-ready');
 }
 
 window.addEventListener("mousemove", e => {
